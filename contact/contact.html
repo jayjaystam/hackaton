@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../contact/conact.css">
+</head>
+<body>
+
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1>contact us</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="your name">
+            <small class="error"></small>
+
+            <label for="email">Name:</label>
+            <input type="text" id="email" placeholder="your email">
+            <small class="error"></small>
+
+            <label for="message">Name:</label>
+            <textarea id="message" placeholder="your message" rows="8"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="send message">
+                <p id="succes"></p>
+            </div>
+
+
+
+        </form>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>
